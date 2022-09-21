@@ -1,0 +1,177 @@
+              Assignment 03
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+Question 9f:
+
+package day03.pgdac;
+public class patterNumber {
+    public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 09:
+
+package Assignment03.pgdac.patterns;
+
+import java.util.Scanner;
+
+public class FirstPattern {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter pattern size");
+        int size = s.nextInt();
+        for(int i=1;i<=size;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Question 03:
+
+package day03.cube.pgdac;
+import java.util.Scanner;
+public class FindCube {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number till you want to find cube");
+        int num = s.nextInt();
+        int cube = 0;
+        for(int i=1;i<=num;i++){
+
+            cube =i*i*i;
+            System.out.println(i+"="+"  "+ cube);
+        }
+
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 04:
+
+package Assignment03.pgdac;
+
+import java.util.Scanner;
+
+public class FindPrime {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int num = s.nextInt();
+        for (int i=2;i <= Math.sqrt(num);i++){
+            if(num%i==0) {
+                System.out.println("is not prime");
+                break;
+            }
+            else {
+                System.out.println("prime");
+                break;
+            }
+
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 05:
+
+package Assignment03.com.pgdac;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a=0,b=1;
+        System.out.println("enter the number");
+        int num = s.nextInt();
+        for(int i=0;i<=num;i=a+b){
+            System.out.println(i);
+            a=b;
+            b=i;
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 06
+
+package Assignment03.Factorial.pgdac;
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        System.out.println("enter the number");
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        int fact = 1;
+        while (num>1){
+           fact*=num;
+            num--;
+
+        }
+        System.out.println(fact);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 08
+
+package Assignment03.pgdac.com;
+
+import java.util.Scanner;
+
+public class Primeseries {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter the number");
+        int num = s.nextInt();
+        for (int i=2; i<=num;i++){
+            for(int j=2;j<=i;i++){
+                if(i%j==0){
+                    break;
+                }else {
+                    System.out.println(i);
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Question 09
+
+package Assignment03.pgdac.patterns;
+
+import java.util.Scanner;
+
+public class FirstPattern {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter pattern size");
+        int size = s.nextInt();
+        for(int i=1;i<=size;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
